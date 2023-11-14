@@ -1,0 +1,84 @@
+Os dados que você está recebendo são informações sobre o ticker de um par de criptomoedas específico (no caso, BTCUSDT) na Binance. 
+Esses dados são fornecidos no formato JSON e contêm várias informações relevantes para negociação. 
+Aqui está uma breve explicação dos campos mais importantes:
+
+e (event): O tipo de evento, que é "24hrTicker" indicando que os dados fornecidos são relacionados ao ticker de 24 horas.
+
+E (timestamp): O timestamp do evento em milissegundos.
+
+s (symbol): O par de criptomoedas para o qual os dados do ticker são fornecidos, neste caso, BTCUSDT.
+
+p (priceChange): A variação de preço durante as últimas 24 horas.
+
+P (priceChangePercent): A variação percentual de preço durante as últimas 24 horas.
+
+w (weightedAvgPrice): O preço médio ponderado nas últimas 24 horas.
+
+x (prevClose): O preço de fechamento do período anterior.
+
+c (lastPrice): O preço mais recente da criptomoeda.
+
+Q (lastQty): A quantidade da última transação.
+
+b (bidPrice): O preço de oferta atual.
+
+B (bidQty): A quantidade disponível na ordem de compra.
+
+a (askPrice): O preço de venda atual.
+
+A (askQty): A quantidade disponível na ordem de venda.
+
+o (openPrice): O preço de abertura das últimas 24 horas.
+
+h (highPrice): O preço mais alto durante as últimas 24 horas.
+
+l (lowPrice): O preço mais baixo durante as últimas 24 horas.
+
+v (volume): O volume total de negociação nas últimas 24 horas.
+
+q (quoteVolume): O volume total em moeda de cotação nas últimas 24 horas.
+
+O (openTime): O timestamp de abertura do período de 24 horas.
+
+C (closeTime): O timestamp de fechamento do período de 24 horas.
+
+F (firstTradeId): O ID da primeira negociação ocorrida durante as últimas 24 horas.
+
+L (lastTradeId): O ID da última negociação ocorrida durante as últimas 24 horas.
+
+n (numTrades): O número total de negociações ocorridas durante as últimas 24 horas.
+
+
+// Keys Tests
+API Key: mqZUebhIt6TAEFhG7OB75c2NvkgnKWEkykJsfPllC0XMPKoQJQqhnzKTz0Rt5p5A
+Secret Key: 3iO1p71SuZqZqhGvowSSUNknHDXVrx4B2V62LQuhQLIzdCD43oZqZWwztVWrjBfD
+
+
+Limpar o Cache do NPM:
+Execute o seguinte comando no terminal para limpar o cache do npm:
+
+bash
+Copy code
+npm cache clean --force
+Limpar o Cache do Nodemon:
+Se você estiver usando o Nodemon, também pode tentar limpar o cache específico do Nodemon:
+
+bash
+Copy code
+npm install -g nodemon
+nodemon --clear
+Este comando irá limpar o cache do Nodemon.
+
+Remover a Pasta node_modules:
+Às vezes, problemas podem surgir devido a arquivos corrompidos ou desatualizados na pasta node_modules. Você pode tentar remover a pasta node_modules e reinstalar as dependências:
+
+bash
+Copy code
+rm -rf node_modules
+npm install
+ou no Windows:
+
+bash
+Copy code
+rmdir /s /q node_modules
+npm install
